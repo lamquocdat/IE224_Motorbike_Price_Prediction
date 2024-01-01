@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  flask_app:
+    build:
+      context: ./webapp
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-5000}:5000"
+    environment:
+      FLASK_APP: app.py
+      PORT: ${PORT:-5000}
