@@ -1,11 +1,15 @@
 ﻿#IE224_Motorbike_Price_Prediction
 Used motorbike price prediction project for Data Analysis subject IE224 UIT.
+
 Details of the project can be read in the "Báo cáo".
 
 # Web app
 A website that shows the results of the model after training.
+
 It is deployed at https://ie224-motorbike-price-prediction.onrender.com
+
 The user enters the necessary parameters and presses the prediction button, the model will calculate the price of that car and display it on the screen.
+
 How to run the web app is as follows:
 
 ## Create .env file
@@ -14,6 +18,7 @@ Edit the content in the .env file accordingly.
 
 ## Run the web app
 Then run the following commands to run the web app
+
 ``````
 # Go to web app folder
 cd .\webapp
@@ -56,9 +61,12 @@ docker-compose down
 
 ## About machine learning models and related objects
 After exporting the model, put it in the webapp/app/models folder
+
 Other components such as encoder and scaler need to be put into webapp/app/utils after being exported
 
 ## Retrain model and update
 Every time you need to update the model, run the notebook file again and export the model (including scaler and encoder if any) into a .joblib file.
+
 Then put those files in the corresponding folders webapp/app/models and webapp/app/utils
+
 Then run the web app again.
