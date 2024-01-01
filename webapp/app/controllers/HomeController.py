@@ -19,3 +19,6 @@ def home_predict(data):
     }
 
     return jsonify(result)
+
+def notfound():
+    return render_template('notfound.html')

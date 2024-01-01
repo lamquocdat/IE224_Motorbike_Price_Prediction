@@ -14,5 +14,5 @@ def predict_route():
     return home_predict(request.get_json())
 
 @main.route('/<path:undefined_path>', methods=['GET'])
-def other_route(undefined_path):
-    return home()
+def notfound_route(undefined_path):
+    return notfound()
